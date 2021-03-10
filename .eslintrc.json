@@ -5,7 +5,7 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "airbnb"
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -15,14 +15,12 @@
     "sourceType": "module"
   },
   "plugins": [
+    "prettier",
     "react"
   ],
   "rules": {
-    "import/prefer-default-export": "off",
-    "react/prop-types": "off",
-    "global-require": "off",
-    "jsx-a11y/label-has-associated-control": "off",
-    "react/button-has-type": "off",
-    "react/jsx-props-no-spreading": "off"
+    "prettier/prettier": [
+      "error"
+    ]
   }
 }
